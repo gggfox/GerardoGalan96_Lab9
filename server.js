@@ -6,7 +6,7 @@ const validateApiKey = require( './middleware/validateToken');
 const mongoose = require( 'mongoose' );
 const { Bookmarks } = require( './bookmarkModel' );
 const cors = require( './middleware/cors' );
-const {DATABASE_URL, PORT} = require( './config.js' );
+const {DATABASE_URL, PORT} = require( './config' );
 
 const jsonParser = bodyParser.json();
 const app = express();
