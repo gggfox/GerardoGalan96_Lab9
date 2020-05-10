@@ -1,0 +1,30 @@
+p,label,div,h3{
+    color:rgb(228, 228, 228);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(34, 33, 33);
+}
+
+span{
+    display: block;
+}
+div{
+    padding-bottom: 2em;
+}
+
+.many-fields{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    width:10%;
+    height:5vh;
+    flex:1;
+}
+.update-bookmark-form{
+    display: flex;
+    flex-direction: row;
+
+    border:red 3px solid;
+    padding:2em;
+}

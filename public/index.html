@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Bookmarks App</title>
+        <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!--Add bookmark Form-->
+        <form class="add-bookmark-form">
+            <label for="bookmarkTitle">
+                Title:
+            </label>
+            <input type="text" id="bookmarkTitle" />
+            <label for="bookmarkDescription">
+                Description:
+            </label>
+            <input type="text" id="bookmarkDescription" />
+            <label for="bookmarkUrl">
+                Url:
+            </label>
+            <input type="text" id="bookmarkUrl">
+            <label for="bookmarkRating">
+                Rating:
+            </label>
+            <input type="number" id="bookmarkRating">
+            <button type="submit">
+                Add bookmark
+            </button>
+        </form>
+
+        <!--DELETE FORM-->
+        <form class="delete-bookmark-form">
+            <label for="BookmarkIdToDelete" >
+                Write the id of the bookmark you wish to delete.
+            </label>
+            <input type="text" id="BookmarkIdToDelete">
+            <button type="submit">
+                Delete bookmark
+            </button>
+        </form>
+
+
+        <!--Update bookmark-->
+        <form class="update-bookmark-form">
+            <div class="many-fields">            
+                <label for="bookmarkToUpdateId">
+                    Id:
+                </label>
+                <input type="text" id="bookmarkToUpdateId">
+            </div>
+            <div class="many-fields">
+                <label for="bookmarkToUpdateTitle">
+                    Title:
+                </label>
+                <input type="text" id="bookmarkToUpdateTitle">
+           </div>      
+           <div class="many-fields">
+            <label for="bookmarkToUpdateDescription">
+                Description:
+            </label>
+            <input type="text" id="bookmarkToUpdateDescription">
+           </div>
+           <div class="many-fields">
+                <label for="bookmarkToUpdateUrl">
+                    Url:
+                </label>
+                <input type="text" id="bookmarkToUpdateUrl">
+           </div>
+           <div class="many-fields">
+                <label for="bookmarkToUpdateRating">
+                    Rating:
+                </label>
+                <input type="Number" id="bookmarkToUpdateRating">
+           </div>
+
+            <button type="submit">
+                Update bookmark
+            </button>
+        </form>
+
+
+        <form class="get-bookmarks-form">
+            <label for="getBookmarksByTitle">
+                Get By Title:
+            </label>
+            <input type="text" id="getBookmarksByTitle">
+            <button type="submit">
+                Get bookmarks 
+            </button>
+        </form>
+
+        <!--Results-->
+        <h3>Results</h3>
+        <section class="results">
+
+        </section>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
